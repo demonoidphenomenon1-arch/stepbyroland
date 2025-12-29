@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitPillér | Tőzsdei Tanácsadás</title>
+    <style>
+        /* Modern és letisztult stílus */
+        :root {
+            --primary-color: #00d2ff;
+            --secondary-color: #3a7bd5;
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #f8fafc;
+            --accent-green: #10b981;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--bg-dark));
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-green);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #070b14;
+            font-size: 0.9rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        .risk-warning {
+            color: #94a3b8;
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PROFIT<span>PILLÉR</span></div>
+        <div>
+            <a href="#" style="color: white; text-decoration: none; margin-left: 20px;">Kezdőlap</a>
+            <a href="#services" style="color: white; text-decoration: none; margin-left: 20px;">Szolgáltatások</a>
+            <a href="#contact" style="color: white; text-decoration: none; margin-left: 20px;">Kapcsolat</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Építse fel jövőjét a tőzsdén</h1>
+        <p>Szakértő elemzések, személyre szabott stratégiák és profi kockázatkezelés.</p>
+        <a href="#contact" class="cta-button">Ingyenes konzultáció</a>
+    </header>
+
+    <div class="container" id="services">
+        <h2 style="text-align: center; margin-bottom: 40px;">Szolgáltatásaink</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Portfólió Építés</h3>
+                <p>Hosszú távú, stabil növekedésre fókuszáló befektetési kosarak összeállítása egyedi igények alapján.</p>
+            </div>
+            <div class="card">
+                <h3>Technikai Elemzés</h3>
+                <p>Grafikonok, trendek és indikátorok napi szintű elemzése a legoptimálisabb belépési pontokhoz.</p>
+            </div>
+            <div class="card">
+                <h3>Kockázatkezelés</h3>
+                <p>Megtanítjuk, hogyan védje meg tőkéjét a piaci ingadozásoktól és hogyan használja a stop-loss megbízásokat.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <h3>Kapcsolatfelvétel</h3>
+        <p>Készen áll a tudatos kereskedésre? Írjon nekünk: <strong>info@profitpiller.hu</strong></p>
+        
+        <div class="risk-warning">
+            <strong>Kockázati figyelmeztetés:</strong> A tőzsdei kereskedés magas kockázattal jár. A múltbéli hozamok nem garantálják a jövőbeli teljesítményt.
+        </div>
+        <p>&copy; 2024 ProfitPillér Tanácsadó Kft. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
